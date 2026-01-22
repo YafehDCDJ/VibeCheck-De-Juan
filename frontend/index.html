@@ -11,14 +11,19 @@
     <h1>VibeCheck 411L</h1>
     <p class="subtitle">Click buttons to fetch data from your Node.js API.</p>
 
+    <div class="status-bar">
+      <span id="apiStatus" class="status-indicator">● Disconnected</span>
+      <span id="smashCounter">Smashes: 0</span>
+    </div>
+
     <div class="button-group">
-      <button id="btnFortune">🔮 Fortune</button>
-      <button id="btnJoke">😂 Joke</button>
-      <button data-mood="happy" class="btnMood">😄 Happy</button>
-      <button data-mood="tired" class="btnMood">🥱 Tired</button>
-      <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
-      <button id="btnSmash">💥 SMASH!</button>
-      <button id="btnSecret">🕵️ Secret</button>
+      <button id="btnFortune" data-endpoint="/api/fortune">🔮 Fortune</button>
+      <button id="btnJoke" data-endpoint="/api/joke">😂 Joke</button>
+      <button data-mood="happy" class="btnMood" data-endpoint="/api/vibe">😄 Happy</button>
+      <button data-mood="tired" class="btnMood" data-endpoint="/api/vibe">🥱 Tired</button>
+      <button data-mood="stressed" class="btnMood" data-endpoint="/api/vibe">😵‍💫 Stressed</button>
+      <button id="btnSmash" data-endpoint="/api/smash" data-method="POST">💥 SMASH!</button>
+      <button id="btnSecret" data-endpoint="/api/secret">🕵️ Secret</button>
     </div>
 
     <h2>Output</h2>
