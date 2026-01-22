@@ -86,6 +86,79 @@ h2 {
   font-family: 'Courier New', monospace;
 }
 
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #666;
+  gap: 10px;
+}
+
+.status-indicator {
+  font-weight: 600;
+  color: #e74c3c;
+}
+
+.status-indicator.connected {
+  color: #27ae60;
+}
+
+#smashCounter {
+  font-weight: 600;
+  color: #667eea;
+  flex: 1;
+}
+
+.btn-reset {
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #95a5a6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-reset:hover {
+  background: #7f8c8d;
+  transform: scale(1.05);
+}
+
+.counter-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #e8f4f8;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.stat-label {
+  color: #555;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #667eea;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 20px;
