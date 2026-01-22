@@ -11,6 +11,11 @@
     <h1>VibeCheck 411L</h1>
     <p class="subtitle">Click buttons to fetch data from your Node.js API.</p>
 
+    <div class="status-bar">
+      <span id="apiStatus" class="status-indicator">● Disconnected</span>
+      <span id="smashCounter">Smashes: 0</span>
+    </div>
+
     <div class="button-group">
       <button id="btnFortune" data-endpoint="/api/fortune">🔮 Fortune</button>
       <button id="btnJoke" data-endpoint="/api/joke">😂 Joke</button>
